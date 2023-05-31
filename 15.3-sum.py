@@ -10,6 +10,8 @@ class Solution:
         nums.sort()
         res = set()
         for l in range(len(nums) - 2):
+            if nums[l] > 0:
+                break
             r = len(nums) - 1
             mid = l + 1
             while mid < r:
